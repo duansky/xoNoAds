@@ -1,6 +1,6 @@
 	var ads = $(".a_cb, .a_mu table tr:gt(0)");
 
-	if ( ads.size() > 5 ) {
+	if (ads.size() > 5) {
 		ads.remove();
 		
 		var a = $(".a_mu table td:first a");
