@@ -1,0 +1,42 @@
+{
+  "name": "成人网站网址发布器",
+  "version": "1.3.4",
+  "description": "本插件将陆续收集各大成人网站的网址,方便各位狼友的不时之需. 成人网站的广告让各位狼友不胜其扰,本插件兼顾净化广告功能,让您清清爽爽地撸上一发.",
+
+  "browser_action": {
+    "default_icon": "images/ox.png",
+    "default_title": "No Ads",
+    "default_popup" : "popup.html"
+  },
+
+  "content_security_policy": "script-src 'self' https://*.clouddn.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": [
+        
+	"*://*/*"
+      ],
+
+      "all_frames": false,
+      
+      "js": [
+        "content_script.js",
+	"select.js"
+      ]
+    }
+  ],
+
+  "icons": {
+	"16": "images/ox.png",
+	"48": "images/ox.png",
+	"128": "images/ox.png"
+  },
+
+  "web_accessible_resources": [
+    "images/*.*",
+    "*.js"
+  ],
+
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 2
+}
