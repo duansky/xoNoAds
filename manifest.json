@@ -1,6 +1,6 @@
 {
   "name": "成人网站网址发布器",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "本插件将陆续收集各大成人网站的网址,方便各位狼友的不时之需. 成人网站的广告让各位狼友不胜其扰,本插件兼顾净化广告功能,让您清清爽爽地撸上一发.",
 
   "browser_action": {
@@ -20,8 +20,7 @@
       "all_frames": false,
       
       "js": [
-        "content_script.js",
-	"select.js"
+	"content_script.js"
       ]
     }
   ],
